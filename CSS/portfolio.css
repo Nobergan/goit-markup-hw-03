@@ -1,0 +1,283 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --nav-text-color: #212121;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --description-text-color: #757575;
+  --nav-filters-color: #212121;
+}
+
+body {
+  background-color: #ffffff;
+
+  font-family: Roboto, sans-serif;
+}
+
+.list {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* ШАПКА */
+.page-header {
+  margin-top: 0px;
+  margin-bottom: 95px;
+
+  outline: 2px solid tomato;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+  outline: 1px solid tomato;
+  background-color: #2f303af;
+}
+
+/* logo */
+.logo {
+  color: #000000;
+
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+
+  text-decoration: none;
+}
+
+.web-color {
+  color: var(--accent-color);
+}
+
+/* site-nav */
+.site-nav a {
+  color: var(--nav-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  text-decoration: none;
+}
+
+.site-nav a.current {
+  color: var(--accent-color);
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+  color: var(--accent-color);
+}
+
+/* address-header */
+.address {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.address-header a {
+  color: #757575;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  text-decoration: none;
+}
+
+.address-header {
+  margin-top: 0px;
+  margin-bottom: 95px;
+}
+*/ .address-header a:hover,
+.address-header a:focus {
+  color: var(--accent-color);
+}
+
+/* БОДИ */
+
+.project-section {
+  outline: 1px solid tomato;
+
+  margin-top: 0px;
+  margin-bottom: 94px;
+}
+
+.project-title-container {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+/* фильтры */
+
+.filters-list button {
+  background-color: #f5f4fa;
+  color: var(--nav-filters-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  border-radius: 4px;
+  border: transparent;
+
+  padding: 6px 22px;
+  min-width: 73px;
+}
+
+.filters-list button:hover,
+.filters-list button:focus {
+  color: #ffffff;
+  background-color: var(--accent-color);
+}
+
+.buttons-container {
+  margin-top: 0px;
+  margin-bottom: 34px;
+  text-align: center;
+}
+
+.button {
+}
+
+/* проекты */
+
+.project-list .title {
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  margin-top: 0px;
+  margin-bottom: 4px;
+}
+
+.project-list .desc {
+  color: var(--description-text-color);
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.project-list a {
+  text-decoration: none;
+}
+
+.project-list-img {
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+/* футер */
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: #2f303a;
+
+  outline: 2px solid tomato;
+}
+
+.footer-container {
+  /* display: inline-block; */
+
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 1200px;
+
+  outline: 1px solid tomato;
+
+  background-color: #2f303a;
+}
+
+.footer-logo-container {
+  margin-bottom: 20px;
+
+  outline: 2px solid tomato;
+
+  display: inline-block;
+
+  width: 1170px;
+
+  color: #000000;
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+
+.studio-color {
+  color: #ffffff;
+}
+
+.footer .map {
+  color: #ffffff;
+
+  display: inline-block;
+
+  margin-top: 0px;
+  margin-bottom: 9px;
+}
+
+.footer .address {
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  color: rgba(255, 255, 255, 0.6);
+
+  outline: 2px solid tomato;
+}
+
+.mail-address-container {
+  display: inline-block;
+
+  margin-top: 0px;
+  margin-bottom: 9px;
+}
+
+.tel-address-container {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+/ .footer .text {
+  display: inline-block;
+
+  margin-top: 0px;
+  margin-bottom: 60px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+
+  outline: 2px solid tomato;
+}
