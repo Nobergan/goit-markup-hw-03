@@ -1,4 +1,4 @@
-html {
+/* html {
   box-sizing: border-box;
 }
 
@@ -6,7 +6,7 @@ html {
 *::before,
 *::after {
   box-sizing: border-box;
-}
+} */
 
 :root {
   --nav-text-color: #212121;
@@ -21,13 +21,13 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+/* Утилиты */
 .list {
   list-style: none;
   padding: 0px;
   margin: 0px;
 }
 
-/* ШАПКА */
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -39,16 +39,23 @@ body {
   background-color: #2f303af;
 }
 
+/* ШАПКА */
+
+.header-flex {
+  display: flex;
+  align-items: center;
+}
+
 /* logo */
 .logo {
   color: #000000;
-
   font-family: Raleway, sans-serif;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-
   text-decoration: none;
+
+  outline: 2px solid tomato;
 }
 
 .web-color {
@@ -56,9 +63,25 @@ body {
 }
 
 /* site-nav */
-.site-nav a {
-  color: var(--nav-text-color);
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
 
+.site-nav .item {
+  outline: 2px solid tomato;
+}
+
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site-nav a {
+  display: block;
+  padding-top: 34px;
+  padding-bottom: 34px;
+
+  color: var(--nav-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -77,9 +100,23 @@ body {
 }
 
 /* address-header */
-.address-header a {
-  color: #757575;
+.address-header {
+  display: flex;
+  margin-left: auto;
 
+  outline: 2px solid tomato;
+}
+
+.address-header .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.address-header a {
+  display: block;
+  padding-top: 34px;
+  padding-bottom: 34px;
+
+  color: #757575;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -102,6 +139,7 @@ body {
 .hero {
   background-color: #2f303a;
   outline: 1px solid tomato;
+  margin-bottom: 89px;
 
   text-align: center;
 }
@@ -129,7 +167,6 @@ body {
   min-width: 200px;
 
   background-color: var(--accent-color);
-
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
@@ -140,8 +177,8 @@ body {
 }
 
 .button-container {
-  margin-bottom: 94px;
-  padding: 0px;
+  margin-bottom: 0px;
+  margin-top: 0px;
 
   outline: 1px solid tomato;
 }
@@ -161,8 +198,16 @@ body {
   outline: 1px solid tomato;
 }
 
-.section {
-  margin-bottom: 94px;
+.feature-list {
+  display: flex;
+}
+
+.feature-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.feature-list .item {
+  width: 270px;
 }
 
 .feature-list .title {
@@ -170,7 +215,6 @@ body {
   margin-bottom: 10px;
 
   color: var(--title-text-color);
-
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -182,7 +226,6 @@ body {
   margin-bottom: 0px;
 
   color: var(--description-text-color);
-
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
@@ -190,12 +233,23 @@ body {
 }
 
 /* чем мы занимаемся */
+.work-section {
+  margin-bottom: 94px;
+}
+
+.work-list {
+  display: flex;
+}
+
+.work-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .work-title {
   margin-top: 0px;
   margin-bottom: 50px;
 
   color: var(--title-text-color);
-
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -204,12 +258,23 @@ body {
 }
 
 /* наша команда */
+.team-section {
+  /* display: flex; */
+}
+
+.team-list {
+  display: flex;
+}
+
+.team-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .team-title {
-  margin-top: 94px;
+  margin-top: 0px;
   margin-bottom: 50px;
 
   color: var(--title-text-color);
-
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -222,11 +287,9 @@ body {
 }
 
 .team-list .title {
-  margin-top: 0px;
   margin-bottom: 10px;
 
   color: var(--title-text-color);
-
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -239,7 +302,6 @@ body {
   margin-bottom: 10px;
 
   color: var(--description-text-color);
-
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
@@ -248,6 +310,8 @@ body {
 }
 
 .team-section {
+  margin-top: 0px;
+  margin-bottom: 0px;
   padding-top: 94px;
   padding-bottom: 94px;
 
@@ -268,9 +332,6 @@ body {
 
 .footer-logo-container {
   margin-bottom: 20px;
-
-  outline: 2px solid tomato;
-
   display: inline-block;
   width: 1170px;
 
@@ -279,6 +340,8 @@ body {
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+
+  outline: 2px solid tomato;
 }
 
 .studio-color {
@@ -286,12 +349,11 @@ body {
 }
 
 .footer .map {
-  color: #ffffff;
-
   display: inline-block;
-
   margin-top: 0px;
   margin-bottom: 9px;
+
+  color: #ffffff;
 }
 
 .footer .address {
@@ -305,7 +367,6 @@ body {
 
 .mail-address-container {
   display: inline-block;
-
   margin-top: 0px;
   margin-bottom: 9px;
 }
@@ -316,7 +377,6 @@ body {
 }
 / .footer .text {
   display: inline-block;
-
   margin-top: 0px;
   margin-bottom: 60px;
 

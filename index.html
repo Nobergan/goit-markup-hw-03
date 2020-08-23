@@ -19,27 +19,28 @@
     <!-- Шапка -->
 
     <header class="page-header">
-      <div class="container">
+      <div class="header-flex container">
+        <a href="/" class="logo"><span class="web-color">Web</span>Studio</a>
         <nav>
-          <a href="/" class="logo"><span class="web-color">Web</span>Studio</a>
-
           <ul class="site-nav list">
-            <li><a href="index.html" class="current">Студия</a></li>
-            <li><a href="portfolio.html">Портфолио</a></li>
-            <li><a href="">Контакты</a></li>
+            <li class="item">
+              <a href="index.html" class="current">Студия</a>
+            </li>
+            <li class="item"><a href="portfolio.html">Портфолио</a></li>
+            <li class="item"><a href="">Контакты</a></li>
           </ul>
         </nav>
-      </div>
 
-      <div class="container">
+        <!-- <div class="container"> -->
         <ul class="address-header list">
-          <li>
+          <li class="item">
             <a href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
-          <li>
+          <li class="item">
             <a href="tel:+380961111111">+38 096 111 11 11</a>
           </li>
         </ul>
+        <!-- </div> -->
       </div>
     </header>
 
@@ -48,7 +49,10 @@
       <!-- Баннер -->
       <section class="hero">
         <div class="container">
-          <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+          <h1 class="hero-title">
+            Эффективные решения <br />
+            для вашего бизнеса
+          </h1>
           <p class="button-container">
             <a href="" class="button">Заказать услугу</a>
           </p>
@@ -56,32 +60,32 @@
       </section>
 
       <!-- Особенности -->
-      <section class="section">
+      <section class="work-section">
         <div class="container">
           <h2 class="section-title">Особенности</h2>
           <ul class="feature-list list">
-            <li>
+            <li class="item">
               <h3 class="title">Внимание к деталям</h3>
               <p class="desc">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li>
+            <li class="item">
               <h3 class="title">Пунктуальность</h3>
               <p class="desc">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li>
+            <li class="item">
               <h3 class="title">Планирование</h3>
               <p class="desc">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li>
+            <li class="item">
               <h3 class="title">Современные технологии</h3>
               <p class="desc">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -97,29 +101,29 @@
         <div class="container">
           <h2 class="work-title">Чем мы занимаемся</h2>
 
-          <ul class="work list">
-            <li class="work-list">
+          <ul class="work-list list">
+            <li class="item">
               <img
                 src="./images/what-are-we-doing-1.jpg"
                 alt="Руки пишущие код"
                 width="370"
-                class="work-item list"
+                class="item-img list"
               />
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./images/what-are-we-doing-2.jpg"
                 alt="Тестируют мобильную версию"
                 width="370"
-                class="work-item list"
+                class="item-img list"
               />
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./images/what-are-we-doing-3.jpg"
                 alt="Дизайнер рисует на планшете"
                 width="370"
-                class="work-item list"
+                class="item-img list"
               />
             </li>
           </ul>
@@ -131,7 +135,7 @@
         <div class="container">
           <h2 class="team-title">Наша команда</h2>
           <ul class="team-list list">
-            <li>
+            <li class="item">
               <img
                 src="./images/our-team-1.jpg"
                 alt="Мужчина в очках с бородой"
@@ -142,7 +146,7 @@
               <p class="desc">Product Designer</p>
             </li>
 
-            <li>
+            <li class="item">
               <img
                 src="./images/our-team-2.jpg"
                 alt="Улыбающаяся блондинка в очках и в черном пиджаке"
@@ -153,7 +157,7 @@
               <p class="desc">Frontend Developer</p>
             </li>
 
-            <li>
+            <li class="item">
               <img
                 src="./images/our-team-3.jpg"
                 alt="Улыбающийся парень в белой рубашке"
@@ -164,7 +168,7 @@
               <p class="desc">Marketing</p>
             </li>
 
-            <li>
+            <li class="item">
               <img
                 src="./images/our-team-4.jpg"
                 alt="Мужчина в круглых очках и черной футболке"
