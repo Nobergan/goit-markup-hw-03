@@ -30,31 +30,36 @@ body {
 
 /* ШАПКА */
 .page-header {
+  height: 80px;
   margin-top: 0px;
-  margin-bottom: 95px;
-
-  outline: 2px solid tomato;
+  margin-bottom: 94px;
 }
 
 .container {
   margin-left: auto;
   margin-right: auto;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  width: 1200px;
-  outline: 1px solid tomato;
+
   background-color: #2f303af;
+}
+
+/* ШАПКА */
+
+.header-flex {
+  display: flex;
+  align-items: center;
+  height: 80px;
 }
 
 /* logo */
 .logo {
   color: #000000;
-
   font-family: Raleway, sans-serif;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-
   text-decoration: none;
 }
 
@@ -63,9 +68,21 @@ body {
 }
 
 /* site-nav */
-.site-nav a {
-  color: var(--nav-text-color);
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
 
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site-nav a {
+  display: block;
+  padding-top: 34px;
+  padding-bottom: 34px;
+
+  color: var(--nav-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -84,14 +101,21 @@ body {
 }
 
 /* address-header */
-.address {
-  margin-top: 0px;
-  margin-bottom: 0px;
+.address-header {
+  display: flex;
+  margin-left: auto;
+}
+
+.address-header .item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .address-header a {
-  color: #757575;
+  display: block;
+  padding-top: 34px;
+  padding-bottom: 34px;
 
+  color: #757575;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -100,11 +124,7 @@ body {
   text-decoration: none;
 }
 
-.address-header {
-  margin-top: 0px;
-  margin-bottom: 95px;
-}
-*/ .address-header a:hover,
+.address-header a:hover,
 .address-header a:focus {
   color: var(--accent-color);
 }
@@ -112,10 +132,12 @@ body {
 /* БОДИ */
 
 .project-section {
-  outline: 1px solid tomato;
+  height: 1360px;
 
   margin-top: 0px;
   margin-bottom: 94px;
+  padding-top: 0px;
+  padding-block: 0px;
 }
 
 .project-title-container {
@@ -124,6 +146,14 @@ body {
 }
 
 /* фильтры */
+.filters-list {
+  display: inline-flex;
+  align-items: center;
+}
+
+.filters-list .item:not(:last-child) {
+  margin-right: 8px;
+}
 
 .filters-list button {
   background-color: #f5f4fa;
@@ -149,12 +179,14 @@ body {
 }
 
 .buttons-container {
+  height: 54px;
   margin-top: 0px;
   margin-bottom: 34px;
   text-align: center;
 }
 
 .button {
+  padding: 6px 22px;
 }
 
 /* проекты */
@@ -162,11 +194,10 @@ body {
 .project-list {
   display: flex;
   flex-wrap: wrap;
-
-  background: tomato;
 }
 
 .project-list .item {
+  height: 404px;
   width: calc((100% - 2 * 30px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
@@ -193,6 +224,8 @@ body {
 
   margin-top: 0px;
   margin-bottom: 4px;
+  padding-right: 24px;
+  padding-left: 24px;
 }
 
 .project-list .desc {
@@ -205,6 +238,8 @@ body {
 
   margin-top: 0px;
   margin-bottom: 20px;
+  padding-right: 24px;
+  padding-left: 24px;
 }
 
 .project-list a {
@@ -218,12 +253,11 @@ body {
 
 /* футер */
 .footer {
+  height: 252px;
   padding-top: 60px;
   padding-bottom: 60px;
 
   background-color: #2f303a;
-
-  outline: 2px solid tomato;
 }
 
 .footer-container {
@@ -237,15 +271,11 @@ body {
 
   width: 1200px;
 
-  outline: 1px solid tomato;
-
   background-color: #2f303a;
 }
 
 .footer-logo-container {
   margin-bottom: 20px;
-
-  outline: 2px solid tomato;
 
   display: inline-block;
 
@@ -276,8 +306,6 @@ body {
   margin-bottom: 0px;
 
   color: rgba(255, 255, 255, 0.6);
-
-  outline: 2px solid tomato;
 }
 
 .mail-address-container {
@@ -302,6 +330,4 @@ body {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-
-  outline: 2px solid tomato;
 }
